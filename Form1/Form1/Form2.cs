@@ -34,17 +34,7 @@ namespace Form1
 
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = miCrud.MostrarinformacionTarea(textBoxCarnet.Text);
-
-            //string resultado = miCrud.MostrarinformacionTarea(textBoxCarnet.Text);
-            //string[] datos = resultado.Split(',');
-            //textBoxNombre.Text = datos[0].Trim(); // nombre
-            //textBoxID.Text = datos[1].Trim();    // ID
-            //textBoxNota1.Text = datos[2].Trim();    // nota1
-            //textBoxNota2.Text = datos[3].Trim();    // nota2
-            //textBoxNota3.Text = datos[4].Trim();    // nota3
-            //textBoxNota4.Text = datos[5].Trim();    // nota4
-
+            dataGridView1.DataSource = miCrud.MostrarinformacionTarea(textBoxCarnet.Text)
         }
 
         private void buttonAgregar_Click(object sender, EventArgs e)
